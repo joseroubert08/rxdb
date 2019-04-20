@@ -8,20 +8,24 @@
     "serve": "ws -p 20202 -n",
     "server": "pouchdb-server --host 0.0.0.0 -p 10102 -m -d /tmp/pouchdb-server/ -n true",
     "refresh": "rimraf -r node_modules/rxdb/ && npm i ",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "pubkey",
   "license": "ISC",
   "dependencies": {
     "concurrently": "^3.1.0",
-    "local-web-server": "1.2.6",
+    "local-web-server": "2.0.0",
     "normalize.css": "5.0.0",
-    "pouchdb-adapter-http": "6.0.7",
-    "pouchdb-adapter-localstorage": "6.0.7",
-    "pouchdb-replication": "6.0.7",
-    "pouchdb-server": "1.2.1"
+    "pouchdb-adapter-http": "6.3.0",
+    "pouchdb-adapter-localstorage": "6.2.0",
+    "pouchdb-replication": "6.2.0",
+    "pouchdb-server": "4.0.1",
+    "snyk": "^1.151.2"
   },
   "devDependencies": {
     "rimraf": "2.5.4"
-  }
+  },
+  "snyk": true
 }
