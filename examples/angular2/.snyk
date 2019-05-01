@@ -1,0 +1,33 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.3
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hoek:20180212':
+    - pouchdb-server > pouchdb-adapter-node-websql > websql > sqlite3 > node-pre-gyp > hawk > cryptiles > boom > hoek:
+        patched: '2019-05-01T04:11:45.303Z'
+    - pouchdb-server > pouchdb-adapter-node-websql > websql > sqlite3 > node-pre-gyp > hawk > hoek:
+        patched: '2019-05-01T04:11:45.303Z'
+    - pouchdb-server > http-pouchdb > pouchdb > websql > sqlite3 > node-pre-gyp > hawk > hoek:
+        patched: '2019-05-01T04:11:45.303Z'
+    - pouchdb-server > pouchdb-adapter-node-websql > websql > sqlite3 > node-pre-gyp > request > hawk > hoek:
+        patched: '2019-05-01T04:11:45.303Z'
+    - pouchdb-server > pouchdb-adapter-node-websql > websql > sqlite3 > node-pre-gyp > hawk > sntp > hoek:
+        patched: '2019-05-01T04:11:45.303Z'
+    - pouchdb-server > http-pouchdb > pouchdb > websql > sqlite3 > node-pre-gyp > hawk > boom > hoek:
+        patched: '2019-05-01T04:11:45.303Z'
+    - pouchdb-server > pouchdb-adapter-node-websql > websql > sqlite3 > node-pre-gyp > hawk > boom > hoek:
+        patched: '2019-05-01T04:11:45.303Z'
+    - pouchdb-server > http-pouchdb > pouchdb > websql > sqlite3 > node-pre-gyp > hawk > sntp > hoek:
+        patched: '2019-05-01T04:11:45.303Z'
+    - pouchdb-server > pouchdb-adapter-node-websql > websql > sqlite3 > node-pre-gyp > request > hawk > boom > hoek:
+        patched: '2019-05-01T04:11:45.303Z'
+    - pouchdb-server > pouchdb-adapter-node-websql > websql > sqlite3 > node-pre-gyp > request > hawk > sntp > hoek:
+        patched: '2019-05-01T04:11:45.303Z'
+    - pouchdb-server > pouchdb-adapter-node-websql > websql > sqlite3 > node-pre-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-05-01T04:11:45.303Z'
+    - pouchdb-server > http-pouchdb > pouchdb > websql > sqlite3 > node-pre-gyp > hawk > cryptiles > boom > hoek:
+        patched: '2019-05-01T04:11:45.303Z'
+  'npm:minimatch:20160620':
+    - pouchdb-server > couchdb-harness > glob > minimatch:
+        patched: '2019-05-01T04:11:45.303Z'
