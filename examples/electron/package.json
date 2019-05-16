@@ -5,19 +5,23 @@
   "scripts": {
     "start": "concurrently \"npm run server\" \"npm run electron\"",
     "electron": "electron .",
-    "server": "pouchdb-server --host 0.0.0.0 -p 10102 -m -d /tmp/pouchdb-server/ -n true"
+    "server": "pouchdb-server --host 0.0.0.0 -p 10102 -m -d /tmp/pouchdb-server/ -n true",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "rxdb": "../../",
     "babel-runtime": "6.18.0",
     "concurrently": "3.1.0",
-    "electron": "1.4.1",
+    "electron": "2.0.18",
     "electron-tabs": "0.4.2",
     "electron-window-manager": "1.0.1",
-    "pouchdb-adapter-http": "6.0.7",
-    "pouchdb-adapter-websql": "6.0.7",
-    "pouchdb-replication": "6.0.7",
-    "pouchdb-server": "1.2.1",
-    "watchjs": "0.0.0"
-  }
+    "pouchdb-adapter-http": "6.3.0",
+    "pouchdb-adapter-websql": "6.2.0",
+    "pouchdb-replication": "6.2.0",
+    "pouchdb-server": "4.0.1",
+    "watchjs": "0.0.0",
+    "snyk": "^1.165.0"
+  },
+  "snyk": true
 }
