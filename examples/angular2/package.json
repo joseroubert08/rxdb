@@ -47,7 +47,7 @@
     "pouchdb-adapter-idb": "^6.0.7",
     "pouchdb-adapter-localstorage": "6.0.7",
     "pouchdb-replication": "6.0.7",
-    "pouchdb-server": "1.2.1",
+    "pouchdb-server": "4.2.0",
     "regenerator": "0.8.46",
     "rxjs": "5.0.0-rc.4",
     "zone.js": "^0.7.2"
