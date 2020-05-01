@@ -14,7 +14,9 @@
     "build:clean": "rimraf dist",
     "build:serve": "browser-sync -s dist start",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "docker": "docker run -it -v $(pwd):/app -p 0.0.0.0:8888:8888 -p 0.0.0.0:10101:10101 node:6.9.1 /bin/bash /app/entrypoint.bash"
+    "docker": "docker run -it -v $(pwd):/app -p 0.0.0.0:8888:8888 -p 0.0.0.0:10101:10101 node:6.9.1 /bin/bash /app/entrypoint.bash",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "pubkey",
   "license": "MIT",
@@ -50,7 +52,8 @@
     "pouchdb-server": "1.2.1",
     "regenerator": "0.8.46",
     "rxjs": "5.0.0-rc.4",
-    "zone.js": "^0.7.2"
+    "zone.js": "^0.7.2",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@types/chai": "^3.4.34",
@@ -77,5 +80,6 @@
     "webpack": "2.1.0-beta.27",
     "webpack-dev-server": "2.1.0-beta.12",
     "webpack-merge": "^0.19.0"
-  }
+  },
+  "snyk": true
 }
