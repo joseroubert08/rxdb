@@ -11,7 +11,7 @@
     "pouchdb-adapter-http": "6.0.7",
     "pouchdb-adapter-idb": "6.0.7",
     "pouchdb-replication": "6.0.7",
-    "pouchdb-server": "1.2.1",
+    "pouchdb-server": "4.2.0",
     "react": "15.4.1",
     "react-dom": "15.4.1"
   },
