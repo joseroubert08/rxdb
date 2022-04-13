@@ -19,7 +19,7 @@
     "pouchdb-adapter-http": "6.0.7",
     "pouchdb-adapter-localstorage": "6.0.7",
     "pouchdb-replication": "6.0.7",
-    "pouchdb-server": "1.2.1"
+    "pouchdb-server": "4.0.0"
   },
   "devDependencies": {
     "rimraf": "2.5.4"
