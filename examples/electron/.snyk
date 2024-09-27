@@ -1,0 +1,23 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:debug:20170905':
+    - pouchdb-server > express-pouchdb > body-parser > debug:
+        patched: '2024-09-27T23:17:49.894Z'
+        id: 'npm:debug:20170905'
+        path: pouchdb-server > express-pouchdb > body-parser > debug
+    - pouchdb-server > express-pouchdb > compression > debug:
+        patched: '2024-09-27T23:17:49.894Z'
+        id: 'npm:debug:20170905'
+        path: pouchdb-server > express-pouchdb > compression > debug
+  'npm:ms:20170412':
+    - pouchdb-server > express-pouchdb > body-parser > debug > ms:
+        patched: '2024-09-27T23:17:49.894Z'
+        id: 'npm:ms:20170412'
+        path: pouchdb-server > express-pouchdb > body-parser > debug > ms
+    - pouchdb-server > express-pouchdb > compression > debug > ms:
+        patched: '2024-09-27T23:17:49.894Z'
+        id: 'npm:ms:20170412'
+        path: pouchdb-server > express-pouchdb > compression > debug > ms
